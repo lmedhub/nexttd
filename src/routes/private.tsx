@@ -5,7 +5,9 @@ import NotFound from "../pages/misc/404";
 
 function PrivatePage() {
   return (
-    <Box sx={{ bgcolor: "primary.main", color: "text.primary" }}>private</Box>
+    <Box sx={{ bgcolor: "primary.main", color: "text.primary" }}>
+      private page
+    </Box>
   );
 }
 

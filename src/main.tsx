@@ -5,7 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import PrivateRoutes from "./routes/private";
 import PublicRoutes from "./routes/public";
 
-const isAuth = false;
+export const isAuth = true;
+
 const router = createBrowserRouter([isAuth ? PrivateRoutes() : PublicRoutes()]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
