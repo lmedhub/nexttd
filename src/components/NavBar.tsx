@@ -1,6 +1,6 @@
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { useContext } from "react";
-import { ColorModeContext } from "../App";
+import { ColorModeContext } from "../providers/colorMode";
 
 export default function Navbar() {
   const colorMode = useContext(ColorModeContext);
@@ -10,7 +10,6 @@ export default function Navbar() {
     <Box
       sx={{
         display: "flex",
-        width: "100%",
         alignItems: "center",
         justifyContent: "center",
         bgcolor: "primary.main",
