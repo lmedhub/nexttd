@@ -18,12 +18,8 @@ export default function Navbar() {
       }}
     >
       <Typography>{theme.palette.mode} mode</Typography>
-      <IconButton
-        sx={{ ml: 1 }}
-        onClick={colorMode.toggleColorMode}
-        color="inherit"
-      >
-        {theme.palette.mode === "dark" ? "escuro" : "claro"}
+      <IconButton onClick={colorMode.toggleColorMode} color="inherit">
+        Change
       </IconButton>
     </Box>
   );

@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { amber, grey, deepOrange, blueGrey } from "@mui/material/colors";
+import { amber, grey, blueGrey, teal } from "@mui/material/colors";
 import { PaletteMode } from "@mui/material";
 
 export const createCustomTheme = (mode: PaletteMode) => {
@@ -7,7 +7,7 @@ export const createCustomTheme = (mode: PaletteMode) => {
     palette: {
       mode,
       primary: {
-        ...amber,
+        main: amber[300],
         ...(mode === "dark" && {
           main: amber[900],
         }),
@@ -18,12 +18,13 @@ export const createCustomTheme = (mode: PaletteMode) => {
           main: blueGrey[600],
         }),
       },
-      ...(mode === "dark" && {
-        background: {
-          default: deepOrange[900],
-          paper: deepOrange[900],
-        },
-      }),
+      background: {
+        default: teal[300],
+        ...(mode === "dark" && {
+          default: teal[600],
+        }),
+      },
+
       text: {
         ...(mode === "dark"
           ? {
