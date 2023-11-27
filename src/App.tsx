@@ -6,8 +6,8 @@ import { ErrorBoundary } from "react-error-boundary";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { isAuth } from "./main";
-import PublicLayout from "./components/Layout/PublicLayout";
 import PrivateLayout from "./components/Layout/PrivateLayout";
+import PublicLayout from "./components/Layout/PublicLayout";
 
 function App() {
   const [mode, setMode] = useState<"light" | "dark">("light");

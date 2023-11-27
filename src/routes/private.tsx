@@ -1,8 +1,10 @@
 import { Navigate } from "react-router-dom";
 import App from "../App";
 import NotFound from "../pages/misc/404";
-import DashBoard from "../pages/dashboard";
-import MainPage from "../pages/main";
+import { lazy } from "react";
+
+const DashBoard = lazy(() => import("../pages/dashboard"));
+const MainPage = lazy(() => import("../pages/main"));
 
 export default function PrivateRoutes() {
   return {
